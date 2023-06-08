@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TUP ACSO | Login & Sign Up</title>
+        <script src="Login.js"></script> 
+    </head>
+
+    <body>
+        <section>
+            <div class="form-container">
+                <h1>Log in</h1>
+                <form action="javascript:checkLogIn()">
+                    <div class="control">
+                        <input type="text" id="email" placeholder="">
+                        <label><b>Email</b></label>
+                    </div>
+                    <div class="control">
+                        <input type="password" id="password" placeholder="">
+                        <label><b>Password</b></label>
+                    </div>
+                    <div class="control">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                <div class="link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </section>
+        <style>
+                *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+  color: #fff;
+}
+section{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("pics/mainbg.png");
+  background-size: cover;
+  background-position: center center;
+}
+.form-container{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 400px;
+  padding: 45px;
+  transform: translate(-50%, -50%);
+  background: rgba(58, 60, 66, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+} 
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+.form-container .control input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.form-container .control {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form-container .control label{
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.form-container .control input:focus ~ label,
+.form-container .control input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+.control input[type="submit"]{
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: opacity .3 ease;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.control input[type="submit"]:hover{
+  opacity: 1;
+  background-color:#263480 ;
+}
+.link{
+  text-align: center;
+}
+.link a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  transition: opacity .3s ease;
+}
+.link a:hover{
+  opacity: 1;
+}
+
+        </style>
+    </body>
+</html>
